@@ -35,7 +35,7 @@ jobs:
     - name: Deploy to Server
       run: |
         ssh -o StrictHostKeyChecking=no ubuntu@168.138.213.251 << 'EOF'
-          cd /path/to/your/laravel/project
+          cd /home/ubuntu/lavarel
           git pull origin main
           composer install --no-dev --optimize-autoloader
           php artisan config:cache
